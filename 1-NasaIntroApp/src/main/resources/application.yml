@@ -1,0 +1,7 @@
+spring.datasource:
+  url: jdbc:mysql://localhost:3306/bobocode
+  username: bohdana
+  password: bohdana
+spring.jpa.open-in-view: false
+nasa-api:
+  api-key: ${NASA_API_KEY}
