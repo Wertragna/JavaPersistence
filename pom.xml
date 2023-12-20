@@ -15,4 +15,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <modules>
+        <module>1-NasaIntroApp</module>
+    </modules>
+
 </project>
