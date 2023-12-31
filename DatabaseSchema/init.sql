@@ -30,10 +30,11 @@ CREATE TYPE application_status AS ENUM (
 
 CREATE TABLE IF NOT EXISTS users
 (
-    id       BIGSERIAL,
-    username VARCHAR(255) NOT NULL,
-    email    VARCHAR(255) NOT NULL,
-    version  BIGINT       NOT NULL DEFAULT 0,
+    id        BIGSERIAL,
+    username  VARCHAR(255) NOT NULL,
+    email     VARCHAR(255) NOT NULL,
+    user_type user_type    NOT NULL,
+    version   BIGINT       NOT NULL DEFAULT 0,
 
     CONSTRAINT users_PK PRIMARY KEY (id),
     CONSTRAINT users_username_UK UNIQUE (username),
